@@ -63,6 +63,7 @@ public class PlantWidgetProvider extends AppWidgetProvider {
         // There may be multiple widgets active, so update all of them
 
         // TODO (4): Call startActionUpdatePlantWidgets in onUpdate as well as in AddPlantActivity and PlantDetailActivity (add and delete plants)
+        PlantWateringService.startActionUpdatePlantWidgets(context);
     }
 
     @Override

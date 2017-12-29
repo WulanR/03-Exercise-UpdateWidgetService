@@ -60,6 +60,12 @@ public class PlantWateringService extends IntentService {
         context.startService(intent);
     }
 
+    public static void startActionUpdatePlantWidgets(Context context) {
+        Intent intent = new Intent(context, PlantWateringService.class);
+        intent.setAction(ACTION_UPDATE_PLANT_WIDGETS);
+        context.startService(intent);
+    }
+
     /**
      * @param intent
      */
